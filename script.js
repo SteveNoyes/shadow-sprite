@@ -2,6 +2,8 @@
 let playerState = 'idle';
 // dropdown menu
 const dropdown = document.getElementById('animations');
+// update playerState variable on change of dropdown menu
+// to the selected item
 dropdown.addEventListener('change', function(e){
 	playerState = e.target.value;
 })
@@ -19,8 +21,11 @@ const spriteWidth = 575;
 const spriteHeight = 523;
 
 let gameFrame = 0;
+
 const staggerFrames = 5;
+
 const spriteAnimations = [];
+// an array of objects, name of animation and how many frames it has
 const animationStates = [
 	{
 		name: 'idle',
@@ -65,7 +70,7 @@ const animationStates = [
 ];
 
 // state of each animation matched to loc object
-animationStates.forEach((state, index) => {
+animationStates.forEach((state, index) => {	
 	let frames = {
 		loc: [],
 	}
