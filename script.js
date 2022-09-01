@@ -93,7 +93,7 @@ function animate() {
 	// source image, source coordinates, desination coordinates
 	// anything.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)
 	ctx.drawImage(playerImage, frameX, frameY, spriteWidth, spriteHeight, 0, 0, spriteWidth, spriteHeight);
-
+	// update gameFrame by one each iteration
 	gameFrame++;
 	requestAnimationFrame(animate);
 };
