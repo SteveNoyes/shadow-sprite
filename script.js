@@ -83,7 +83,7 @@ animationStates.forEach((state, index) => {
 });
 
 function animate() {
-	// reset canvas
+	// reset canvas each time function is called
 	ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
 	// this staggers the frames by a fifth
 	let position = Math.floor(gameFrame/staggerFrames) % spriteAnimations[playerState].loc.length;
