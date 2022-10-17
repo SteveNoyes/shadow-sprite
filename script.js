@@ -81,7 +81,7 @@ animationStates.forEach((state, index) => {
 	}
 	spriteAnimations[state.name] = frames;
 });
-
+// idtoa 
 function animate() {
 	// reset canvas each time function is called
 	ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
