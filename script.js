@@ -1,7 +1,6 @@
 // create playerState for initial animation
 let playerState = 'idle';
-// dropdown 
-// menu
+// dropdown menu
 const dropdown = document.getElementById('animations');
 // update playerState variable on change of dropdown menu
 dropdown.addEventListener('change', function(e){
@@ -12,8 +11,7 @@ const canvas = document.getElementById('canvas0');
 const ctx = canvas.getContext('2d');
 const CANVAS_WIDTH = canvas.width = 600;
 const CANVAS_HEIGHT = canvas.height = 600;
-// add sprite sheet to 
-// new image variable
+// add sprite sheet to new image variable
 const playerImage = new Image();
 playerImage.src = 'shadow_dog.png';
 // set sprite width by dividing full width of sheet by how many rows of sprites
